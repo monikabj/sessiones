@@ -9,7 +9,7 @@ app.set("view engine","ejs");
 app.use("/web",express.static(path.join(__dirname,"/web")));
 app.use(express.urlencoded({extended:true}));
 app.use(session({
-    secret:process.env.SECRETO_SESION,
+    secret:process.env.SECRETO_SESSION,
     resave:true,
     saveUninitialized:true
 }));
